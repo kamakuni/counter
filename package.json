@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,19 +11,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
     "@types/react": "^16.8.12",
     "@types/react-dom": "^16.8.3",
-    "babel-loader": "^8.0.5",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-hot-loader": "^4.6.5",
@@ -32,7 +23,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "prop-types": "^15.6.2",
     "typescript": "^3.4.1"
   }
 }
