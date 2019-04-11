@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
 const App = () => {
     const [count, setCount] = React.useState(0)
@@ -10,4 +11,4 @@ const App = () => {
     );
 }
 
-export default App
+ReactDOM.render(<App />, document.getElementById("root"))
