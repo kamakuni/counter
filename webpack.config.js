@@ -6,12 +6,13 @@ module.exports = {
         rules: [
             {
                 test: /\.(ts|tsx|js)$/,
-                exclude: '/node_modules/',
+                //exclude: '/node_modules/',
                 use: ['ts-loader']
             }
         ]
     },
     resolve: {
+        modules: ['node_modules'],
         extensions: ['*','.ts','.tsx','.js']
     },
     output: {
@@ -19,9 +20,9 @@ module.exports = {
         publicPath: '/',
         filename: 'bundle.js', 
     },
-    plugins: [
+    /*plugins: [
         new webpack.HotModuleReplacementPlugin()
-    ],
+    ],*/
     devServer: {
         contentBase: './dist'
     }
