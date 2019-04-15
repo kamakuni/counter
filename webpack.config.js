@@ -1,29 +1,17 @@
 const webpack = require('webpack')
 
 module.exports = {
-    entry: './src/index.tsx',
+    mode: 'development',
+    entry: './src/index.ts',
     module: {
         rules: [
             {
-                test: /\.(ts|tsx|js)$/,
-                //exclude: '/node_modules/',
-                use: ['ts-loader']
+                test: /\.ts$/,
+                use: "ts-loader"
             }
         ]
     },
     resolve: {
-        modules: ['node_modules'],
-        extensions: ['*','.ts','.tsx','.js']
-    },
-    output: {
-        path: __dirname + '/dist',
-        publicPath: '/',
-        filename: 'bundle.js', 
-    },
-    /*plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],*/
-    devServer: {
-        contentBase: './dist'
+        extensions: ['.ts']
     }
 };
