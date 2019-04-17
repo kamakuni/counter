@@ -1,5 +1,5 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import App from './components/App'
+import Counter from './components/Counter'
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+ReactDOM.render(<Counter />, document.querySelector('#root'))
